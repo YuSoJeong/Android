@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableLayout android:layout_height="wrap_content" android:layout_width="300dp" android:background="#ffffff">
+
+
+    -<TableRow android:layout_height="wrap_content" android:layout_width="fill_parent" android:gravity="center_horizontal">
+
+    <TextView android:layout_height="match_parent" android:layout_width="80dp" android:background="#b0b0b0" android:textStyle="normal|bold" android:textSize="18sp" android:textColor="#000" android:text="@string/difficulty"/>
+
+
+    -<RadioGroup android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="1" android:id="@+id/difficulty">
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/df_easy" android:id="@+id/df_easy"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/df_medium" android:id="@+id/df_medium"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/df_hard" android:id="@+id/df_hard"/>
+
+</RadioGroup>
+
+</TableRow>
+
+
+    <TableRow android:layout_height="wrap_content" android:layout_width="fill_parent" android:gravity="center_horizontal">
+
+    <TextView android:layout_height="match_parent" android:layout_width="80dp" android:background="#b0b0b0" android:textSize="18sp" android:textColor="#000" android:text="@string/size"/>
+
+
+    <RadioGroup android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="1" android:id="@+id/cellsize">
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/sz_small" android:id="@+id/size_small"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/sz_medium" android:id="@+id/size_medium"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/sz_large" android:id="@+id/size_large"/>
+
+</RadioGroup>
+
+</TableRow>
+
+</TableLayout>
+
+
+    -<LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent" android:gravity="center">
+
+    <Button android:layout_height="wrap_content" android:layout_width="100dp" android:gravity="center" android:textStyle="bold" android:text="@string/cancel" android:id="@+id/dlgCancel" android:layout_marginTop="5dp" android:layout_marginRight="5dp"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="100dp" android:text="@string/ok" android:id="@+id/dlgOK" android:layout_marginTop="5dp" android:layout_marginRight="5dp"/>
+
+</LinearLayout>
+
+</LinearLayout>

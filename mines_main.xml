@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schems.android.com/tools"
+    android:id="@+id/mines_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout android:padding="0dp" android:layout_height="50dp" android:layout_width="match_parent" android:background="@drawable/panel">
+
+    <TextView android:layout_height="@dimen/display_height" android:layout_width="@dimen/display_width" android:id="@+id/mine_counter" android:background="@drawable/text_back" android:textColor="#FF0000" android:textSize="@dimen/display_font_size" android:layout_alignParentLeft="true"/>
+
+
+    <LinearLayout android:orientation="horizontal" android:padding="0dp" android:layout_height="@dimen/display_height" android:layout_width="wrap_content" android:layout_centerHorizontal="true">
+
+    <ImageButton android:layout_height="@dimen/display_height" android:layout_width="@dimen/display_width" android:id="@+id/btnSetup" android:contentDescription="@string/btn_marker_mode_desc" android:onClick="openSetup" android:scaleType="fitCenter" android:src="@drawable/setup"/>
+
+    <ImageButton android:layout_height="@dimen/display_height" android:layout_width="@dimen/display_width" android:contentDescription="@string/btn_new_game_desc" android:onClick="startNewGame" android:scaleType="fitCenter" android:src="@drawable/btn_icon"/>
+
+    <ImageButton android:layout_height="@dimen/display_height" android:layout_width="@dimen/display_width" android:id="@+id/btnSetMarkerMode" android:contentDescription="@string/btn_marker_mode_desc" android:onClick="setMarkerMode" android:scaleType="fitCenter" android:src="@drawable/bomb"/>
+
+</LinearLayout>
+
+    <TextView android:layout_height="@dimen/display_height" android:layout_width="@dimen/display_width" android:id="@+id/timer" android:background="@drawable/text_back" android:textColor="#FF0000" android:textSize="@dimen/display_font_size" android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
+
+    <LinearLayout android:orientation="vertical" android:padding="0dp" android:layout_height="0dp" android:layout_width="match_parent" android:id="@+id/panel" android:background="@drawable/panel" android:layout_weight="1"> </LinearLayout>
+
+</LinearLayout>
